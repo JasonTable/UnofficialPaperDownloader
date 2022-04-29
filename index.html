@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Download PaperMC</h1>
+    <p>
+        This is a simple tool I made for myself to grab the latest PaperMC builds from the website using their
+        API without using Cloudflare's rocket loader JS.
+    </p>
+    <div><button onclick="get_papermc('paper','1.18.2');">Download latest Paper 1.18.2 build</button></div>
+    <div>Or specify the Minecraft version here.</div>
+    <div>
+        <input id="ver" type="text" placeholder="1.18.2">
+        <button onclick="get_papermc('paper',document.getElementById('ver').value);">Download latest build</button>
+    </div>
+    <div>
+        By downloading, you agree to the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>.
+        Do not seek support from PaperMC staff when using this downloader.
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
